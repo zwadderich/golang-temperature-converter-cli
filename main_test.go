@@ -35,7 +35,7 @@ func TestMain(m *testing.M) {
 	os.Exit(exitCode)
 }
 
-func TestCheckForArguments(t *testing.T) {
+func TestCheckForArgumentsM1(t *testing.T) {
 	t.Run("no args", func(t *testing.T) {
 		dir, err := os.Getwd()
 		if err != nil {
@@ -63,7 +63,7 @@ func TestCheckForArguments(t *testing.T) {
 	})
 }
 
-func TestAssignsToOriginUnit(t *testing.T) {
+func TestAssignsToOriginUnitM1(t *testing.T) {
 	isAssigningToOriginUnit := false
 	isAssigningToOriginUnitFromCorrectFunction := false
 
@@ -115,7 +115,7 @@ func TestAssignsToOriginUnit(t *testing.T) {
 	}
 }
 
-func TestReadsCurrentTemperature(t *testing.T) {
+func TestReadsCurrentTemperatureM2(t *testing.T) {
 	t.Run("reads current temperature", func(t *testing.T) {
 		dir, err := os.Getwd()
 		if err != nil {
@@ -152,7 +152,7 @@ func TestReadsCurrentTemperature(t *testing.T) {
 	})
 }
 
-func TestCheckConversion(t *testing.T) {
+func TestCheckConversionM2(t *testing.T) {
 	t.Run("converts temperature", func(t *testing.T) {
 		dir, err := os.Getwd()
 		if err != nil {
@@ -190,7 +190,7 @@ func TestCheckConversion(t *testing.T) {
 
 }
 
-func TestPromptAgain(t *testing.T) {
+func TestPromptAgainM2(t *testing.T) {
 	t.Run("convert again", func(t *testing.T) {
 		dir, err := os.Getwd()
 		if err != nil {
@@ -233,7 +233,7 @@ func TestPromptAgain(t *testing.T) {
 	})
 }
 
-func TestParsePromptToUpper(t *testing.T) {
+func TestParsePromptToUpperM2(t *testing.T) {
 	t.Run("prompt to upper", func(t *testing.T) {
 		dir, err := os.Getwd()
 		if err != nil {
